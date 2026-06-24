@@ -14,7 +14,9 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   margin: 0;
@@ -33,17 +35,6 @@ h1, h2, h3 { font-family: var(--display); color: var(--verde-profundo); font-wei
 a { color: inherit; text-decoration: none; }
 
 img { max-width: 100%; display: block; }
-
-.kicker {
-  font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  color: var(--vinotinto);
-  margin: 0 0 18px;
-  text-transform: uppercase;
-}
-
-.kicker-invert { color: var(--verde-menta); }
 
 .mono-label {
   font-family: var(--mono);
